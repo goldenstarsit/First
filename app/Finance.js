@@ -9,7 +9,9 @@ export default function FinanceScreen({ navigation }) {
       <FontAwesome name="money" size={80} color="#4CAF50" style={{ marginBottom: 20 }} />
       
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button}
+                  onPress={() => navigation.navigate('FinanceSearch')} // Modified this line
+>
           <Text style={styles.buttonText}>مالیاتی معلومات تلاش کریں</Text>
         </TouchableOpacity>
         

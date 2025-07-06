@@ -11,10 +11,15 @@ const StudentScreen = () => {
       <Text style={styles.heading}>طلباء کی ترتیبات</Text>
       <FontAwesome name="graduation-cap" size={80} color="#4CAF50" style={styles.icon} /> {/* Student Icon */}
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+      <TouchableOpacity 
+          style={styles.button}
+          onPress={() => navigation.navigate('StudentSearch')} // Modified this line
+        >
           <Text style={styles.buttonText}>طلباء کی معلومات تلاش کریں</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button}
+          onPress={() => navigation.navigate('StudentAdd')} // Added this line
+        >
           <Text style={styles.buttonText}>نئے طالبعلم کا اندراج کریں</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>

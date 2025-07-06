@@ -8,7 +8,9 @@ export default function StaffScreen({ navigation }) {
       <Text style={styles.heading}>عملے کی ترتیبات</Text>
       <FontAwesome name="users" size={80} color="#4CAF50" style={{ marginBottom: 20 }} />
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button}
+                  onPress={() => navigation.navigate('StaffSearch')} // Modified this line
+>
           <Text style={styles.buttonText}>عملے کے بارے میں معلومات حاصل کریں</Text>
         </TouchableOpacity>
         

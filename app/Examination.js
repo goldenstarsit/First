@@ -9,7 +9,9 @@ export default function ExaminationScreen({ navigation }) {
       <FontAwesome name="pencil" size={80} color="#4CAF50" style={{ marginBottom: 20 }} />
       
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button}
+                  onPress={() => navigation.navigate('ExaminationSearch')} // Modified this line
+>
           <Text style={styles.buttonText}>امتحانات کی معلومات  تلاش کریں</Text>
         </TouchableOpacity>
         

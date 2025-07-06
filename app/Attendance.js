@@ -8,11 +8,15 @@ export default function AttendanceScreen({ navigation }) {
       <Text style={styles.heading}>حاضری کی ترتیبات</Text>
       <FontAwesome name="calendar-check-o" size={80} color="#4CAF50" style={{ marginBottom: 20 }} />
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button}
+                  onPress={() => navigation.navigate('AttendanceSearch')} // Modified this line
+>
           <Text style={styles.buttonText}>حاضری دیکھیں</Text>
         </TouchableOpacity>
         
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button}
+        onPress={() => navigation.navigate('AttendanceAdd')}
+        >
           <Text style={styles.buttonText}>حاضری لگائیں</Text>
         </TouchableOpacity>
       </View>

@@ -3,11 +3,11 @@ import { View, Text, TextInput, TouchableOpacity, ScrollView, ActivityIndicator,
 import axios from 'axios';
 
 const GOOGLE_SHEET_ID = '1djZfyQyVb7m8dyr0bjmbGx6LsXUCKrvymdZL3bI8MSM';
-const GOOGLE_SHEET_RANGE = 'Sheet1'; // Change if your sheet/tab name is different
+const GOOGLE_SHEET_RANGE = 'Sheet5'; // Change if your sheet/tab name is different
 const MISTRAL_API_URL = 'https://api.mistral.ai/v1/chat/completions';
 const MISTRAL_API_KEY = '5LM8n0jKnhnFqItRk44U5lCOqjxZkkiY';
 
-export default function StudentSearch() {
+export default function PerformanceSearch() {
   const [prompt, setPrompt] = useState('');
   const [response, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
